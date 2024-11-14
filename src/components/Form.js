@@ -26,7 +26,7 @@ export default function Form({ addContact }) {
                 </div>
                 <div className="form-group mb-3">
                     <label>Numer telefonu: </label>
-                    <input type="text" maxLength="9" className="form-control" ref={phoneRef}/>
+                    <input type="number" maxLength="9" className="form-control" ref={phoneRef}/>
                 </div>
                 <button className="btn btn-primary">Dodaj</button>
             </form>
