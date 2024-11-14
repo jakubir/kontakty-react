@@ -12,6 +12,9 @@ Na obrazach 1 i 2 przedstawiono działanie aplikacji przygotowanej w środowisku
 - Aplikacja składa się z komponentu głównego, komponentu formularza, komponentu listy kontaków i komponentu elementu listy kontaktów.
 - Danymi aplikacji jest tablica z imionami i numerami telefonów
 - Aplikacja wyświetla:
+    - Panel prawy, zawierający:
+        - Nagłówek drugiego stopnia o treści: "Lista kontaków"
+        - Lista nienumerowana
     - Panel lewy, zawierający:
         - Nagłówek drugiego stopnia o treści: "Dodaj kontakt"
         - Formularz składający się z:
@@ -20,15 +23,13 @@ Na obrazach 1 i 2 przedstawiono działanie aplikacji przygotowanej w środowisku
             - przycisku "Dodaj"
         - Aplikacja w stanie początkowym wyświetla puste pola formularza
         - Elementy formularza są formatowane zgodnie z obrazem 1 za pomocą stylów biblioteki Bootstrap. Do budowy szablonu HTML należy wykorzystać pomoc zamieszczoną w Tabeli 1. Należy zastosować znaczące nazwy dla identyfikatorów pól formularza
-    - Po wybraniu przycisku formularza jest generowane zdarzenie zatwierdzenia formularza, które dodaje do listy : 
-    - Wartość wpisaną w pierwszym polu formularza
-    - Listę numerowaną generowaną automatycznie dla wszystkich elementów tablicy, niezależnie 
-    od jej wymiaru
-    
-    - Nazwę kursu odpowiadającą numerowi wpisanemu w drugie pole formularza, gdy kurs o takim 
-    numerze istnieje. W przeciwnym wypadku wyświetla komunikat "Nieprawidłowy numer kursu"
+    - Po wybraniu przycisku formularza jest generowane zdarzenie zatwierdzenia formularza, które dodaje element do listy w panelu prawym: 
+        - Wartość wpisaną w pierwszym polu formularza, połączoną z wartością w drugim polu formularza
+        - Czyści obydwa pola formularza
+    - Listę nienumerowaną generowaną automatycznie dla wszystkich elementów tablicy, niezależnie od jej wymiaru
     - Aplikacja powinna być zapisana czytelnie, z zachowaniem zasad czystego formatowania kodu, należy 
     stosować znaczące nazwy zmiennych i funkcji
+
 Kod aplikacji przygotuj do nagrania na płytę. W podfolderze web powinno znaleźć się archiwum całego 
 projektu o nazwie web.zip oraz pliki z kodem źródłowym, które były modyfikowane
 
