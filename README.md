@@ -54,4 +54,16 @@ extras thrown in for more control. The btn classes are designed to be used with
 the ```<button>``` element. Add modifier classes as: btn-primary, btn-secondary, btn-success and more to 
 btn class in order to add background colors.
 e.g. ```<button type="button" class="btn btn-success">Success</button>```
-
+#### Bootstrap grid
+```
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      ...
+    </div>
+    <div class="col">
+      ...
+    </div>
+  </div>
+```
+Important! In React render method use className instead of class; htmlFor instead of for.
