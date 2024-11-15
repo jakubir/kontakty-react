@@ -13,6 +13,7 @@ Na obrazach 1 i 2 przedstawiono działanie aplikacji przygotowanej w środowisku
     - Panel prawy, zawierający:
         - Nagłówek drugiego stopnia o treści: "Lista kontaków"
         - Listę nienumerowaną, generowaną automatycznie dla wszystkich elementów tablicy, niezależnie od jej wymiaru
+        - Każdy element listy powinien mieć przypisany unikalny klucz
     - Panel lewy, zawierający:
         - Nagłówek drugiego stopnia o treści: "Dodaj kontakt"
         - Formularz składający się z:
@@ -67,3 +68,17 @@ e.g. ```<button type="button" class="btn btn-success">Success</button>```
   </div>
 ```
 Important! In React render method use className instead of class; htmlFor instead of for.
+
+## Przykład 2. Wybrane wbudowane funkcje języka JavaScript i hooki biblioteki React.js
+#### Array methods in JavaScript
+Method | Description
+--- | ---
+```map(el => el.id)``` | Creates a new array from calling a function for every array element.
+```filter(str => str.length <= 3)``` | Creates a new array filled with elements that pass a test provided by a function.
+```reduce((total, num) => total + num, 0)``` | Executes a reducer function for array element and returns a single value: the function's accumulated result.
+#### React.js hooks
+Method | Description
+--- | ---
+```const countRef = useRef();``` | Creates a mutable reference that persists across renders, without causing re-renders
+```const [count, setCount] = useState(0);``` | Creates an accesible value, that persists across renders and method to change it.
+``` useEffect(() => {...}, [])``` | Allows to perform side effects in components, after change in the items specified in dependency table.
