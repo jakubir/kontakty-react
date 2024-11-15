@@ -5,7 +5,7 @@ export default function List({ contacts }) {
         <div className="col">
             <h2>Lista kontaktów</h2>
             <ul>
-                {contacts.map((contact) => <Item contact={contact} key={contact.toString()}/>)}
+                {contacts.map((contact) => <Item contact={contact}/>)}
             </ul>
         </div>
     );

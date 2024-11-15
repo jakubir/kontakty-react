@@ -1,8 +1,9 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function Form({ addContact }) {
   const nameRef = useRef();
   const phoneRef = useRef();
+  const [id, setId] = useState(1);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -10,7 +11,9 @@ export default function Form({ addContact }) {
     const contact = {
         name: nameRef.current.value,
         phone: phoneRef.current.value,
+        id: id
     };
+    setId(id+1);
     e.target.reset();
 
     addContact(contact);
