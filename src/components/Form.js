@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-export default function Form({ addContact }) {
+export default function Form({ addContact, emptyContactsList }) {
   const nameRef = useRef();
   const phoneRef = useRef();
   const [id, setId] = useState(1);
@@ -31,7 +31,10 @@ export default function Form({ addContact }) {
                     <label>Numer telefonu: </label>
                     <input type="number" maxLength="9" className="form-control" ref={phoneRef}/>
                 </div>
-                <button className="btn btn-primary">Dodaj</button>
+                <div className="d-flex justify-content-between w-full">
+                    <button type="submit" className="btn btn-primary">Dodaj</button>
+                    <button type="button" className="btn btn-danger" onClick={emptyContactsList}>Wyczyść listę</button>
+                </div>
             </form>
         </div>
     );

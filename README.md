@@ -68,6 +68,13 @@ e.g. ```<button type="button" class="btn btn-success">Success</button>```
   </div>
 ```
 Important! In React render method use className instead of class; htmlFor instead of for.
+#### Bootstrap flex
+````
+<div className="d-flex justify-content-between w-full">
+    ....
+</div>
+````
+Use ```w-full``` to set the ```width``` value to ```100%```.
 
 ## Przykład 2. Wybrane wbudowane funkcje języka JavaScript i hooki biblioteki React.js
 #### Array methods in JavaScript

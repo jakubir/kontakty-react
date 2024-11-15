@@ -9,11 +9,14 @@ export default function App() {
   const addContact = (contact) => {
     setContacts([...contacts, contact]);
   };
+  const emptyContactsList = () => {
+    setContacts([]);
+  }
 
   return (
     <main className="container mt-4">
       <div className="row">
-        <Form addContact={addContact}/>
+        <Form addContact={addContact} emptyContactsList={emptyContactsList}/>
         <List contacts={contacts}/>
       </div>
     </main>
